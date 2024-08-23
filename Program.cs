@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Student
 {
@@ -109,7 +109,25 @@ class Program
         Console.Write("Enter Student ID: ");
         if (int.TryParse(Console.ReadLine(), out id))
         {
-            break;
+            // Check if the ID already exists
+            bool idExists = false;
+            for (int i = 0; i < studentCount; i++)
+            {
+                if (students[i].ID == id)
+                {
+                    idExists = true;
+                    break;
+                }
+            }
+
+            if (idExists)
+            {
+                Console.WriteLine("This ID already exists. Please enter a different ID.");
+            }
+            else
+            {
+                break;
+            }
         }
         else
         {
@@ -165,6 +183,7 @@ class Program
     studentCount++;
     Console.WriteLine("Student added successfully!");
 }
+
 
 static bool IsAlphabetic(string input)
 {
@@ -242,22 +261,24 @@ static bool IsAlphabetic(string input)
         Console.WriteLine("Student not found.");
     }
 
-    static void SortStudentsByGrade(Student[] students, int studentCount)
+   static void SortStudentsByGrade(Student[] students, int studentCount)
+{
+    for (int i = 0; i < studentCount - 1; i++)
     {
-        for (int i = 0; i < studentCount - 1; i++)
+        for (int j = i + 1; j < studentCount; j++)
         {
-            for (int j = i + 1; j < studentCount; j++)
+            if (students[j].Grade > students[i].Grade)
             {
-                if (students[j].Grade > students[i].Grade)
-                {
-                    Student temp = students[i];
-                    students[i] = students[j];
-                    students[j] = temp;
-                }
+                Student temp = students[i];
+                students[i] = students[j];
+                students[j] = temp;
             }
         }
-        Console.WriteLine("Students sorted by grade.");
     }
+    Console.WriteLine("Students sorted by grade.");
+        ViewAllStudents(students, studentCount);
+}
+
 
     static void DisplayAverageGrade(Student[] students, int studentCount)
     {
