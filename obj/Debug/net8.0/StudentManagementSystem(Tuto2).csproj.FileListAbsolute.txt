@@ -1,0 +1,14 @@
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\bin\Debug\net8.0\StudentManagementSystem(Tuto2).exe
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\bin\Debug\net8.0\StudentManagementSystem(Tuto2).deps.json
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\bin\Debug\net8.0\StudentManagementSystem(Tuto2).runtimeconfig.json
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\bin\Debug\net8.0\StudentManagementSystem(Tuto2).dll
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\bin\Debug\net8.0\StudentManagementSystem(Tuto2).pdb
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).AssemblyInfoInputs.cache
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).AssemblyInfo.cs
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).csproj.CoreCompileInputs.cache
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).dll
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\refint\StudentManagementSystem(Tuto2).dll
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).pdb
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\StudentManagementSystem(Tuto2).genruntimeconfig.cache
+c:\Users\zulif\OneDrive\Desktop\ASSIGNMENT KYOUTH\StudentManagementSystem(Tuto2)\obj\Debug\net8.0\ref\StudentManagementSystem(Tuto2).dll
