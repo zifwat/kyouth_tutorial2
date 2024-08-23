@@ -113,6 +113,7 @@ class Program
             bool idExists = false;
             for (int i = 0; i < studentCount; i++)
             {
+                
                 if (students[i].ID == id)
                 {
                     idExists = true;
@@ -157,7 +158,14 @@ class Program
         Console.Write("Enter Student Age: ");
         if (int.TryParse(Console.ReadLine(), out age))
         {
-            break;
+            if (age >= 0 && age <= 150)
+            {
+                break;
+            }
+             else
+             {
+                Console.WriteLine("Invalid input. Please enter an age between 0 and 150.");
+             }
         }
         else
         {
@@ -171,7 +179,14 @@ class Program
         Console.Write("Enter Student Grade: ");
         if (double.TryParse(Console.ReadLine(), out grade))
         {
-            break;
+            if (grade >= 0)
+            {
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Grade cannot be negative.");
+            }
         }
         else
         {
@@ -243,23 +258,41 @@ static bool IsAlphabetic(string input)
         Console.WriteLine("Student not found.");
     }
 
-    static void UpdateStudentGrade(Student[] students, int studentCount)
-    {
-        Console.Write("Enter Student ID to update grade: ");
-        int id = int.Parse(Console.ReadLine());
+   static void UpdateStudentGrade(Student[] students, int studentCount)
+{
+    Console.Write("Enter Student ID to update grade: ");
+    int id = int.Parse(Console.ReadLine());
 
-        for (int i = 0; i < studentCount; i++)
+    for (int i = 0; i < studentCount; i++)
+    {
+        if (students[i].ID == id)
         {
-            if (students[i].ID == id)
+            double grade;
+            while (true)
             {
                 Console.Write("Enter new grade: ");
-                students[i].Grade = double.Parse(Console.ReadLine());
-                Console.WriteLine("Grade updated successfully!");
-                return;
+                if (double.TryParse(Console.ReadLine(), out grade))
+                {
+                    if (grade >= 0)
+                    {
+                        students[i].Grade = grade;
+                        Console.WriteLine("Grade updated successfully!");
+                        return;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input. Grade cannot be negative.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid number for the grade.");
+                }
             }
         }
-        Console.WriteLine("Student not found.");
     }
+    Console.WriteLine("Student not found.");
+}
 
    static void SortStudentsByGrade(Student[] students, int studentCount)
 {
